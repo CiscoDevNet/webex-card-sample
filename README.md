@@ -64,3 +64,5 @@ mechanism to create an `attachmentActions` webhook and receive inbound POST mess
 * As the standard webhook mechanism requires that the application be accessible via a publicly available URL, this sample uses the [ngrok for node](https://www.npmjs.com/package/ngrok) package to automatically create a reverse proxy tunnel  - this may have implications for your firewall/security policy.
 
     A production application would typically host an application like this on a cloud platform or have an IT vetted reverse proxy configured, etc.  If/when the Teams Node.js SDK implements listening for attachmentActions events, then this mechanism could be removed, relying on the websocket-based mechanism built into the other SDK listeners.
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/webex-card-sample)

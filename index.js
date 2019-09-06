@@ -96,6 +96,8 @@ async function sendStrategy( roomId ) {
                 {
                     "type": "Action.ShowCard",
                     "title": "",
+                    "id": "actSettings",
+                    "iconUrl": `${ publicUrl }/images/settings_dark.png`,
                     "card": {
                         "type": "AdaptiveCard",
                         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -168,8 +170,7 @@ async function sendStrategy( roomId ) {
                                 }
                             }
                         ]
-                    },
-                    "iconUrl": `${ publicUrl }/images/settings_dark.png`
+                    }
                 }			        
             ]
         }
