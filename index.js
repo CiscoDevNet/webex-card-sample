@@ -29,6 +29,11 @@ const webex = require( 'webex/env' );
 const ngrok = require( 'ngrok' );
 var request = require( 'request-promise-native' );
 
+if ( process.env.WEBEX_ACCESS_TOKEN === '') {
+    console.log( 'Token missing: please provide a valid Webex Teams user or bot access token in .env or via WEBEX_ACCESS_TOKEN environment variable');
+    process.exit(1);
+}
+
 const app = express();
 const port = process.env.PORT;
 
@@ -236,7 +241,8 @@ async function setupWebexListeners() {
 (async function() {
 
     // Use ngrok to create a public tunnel and URL
-    publicUrl = await ngrok.connect( port );
+    publicUrl = process.env.PUBLIC_URL ? process.env.PUBLIC_URL : await ngrok.connect( port );
+    // if (!process.env.publicUrl) publicUrl = await ngrok.connect( port );
 
     console.log( 'Public URL: ' + publicUrl );
 

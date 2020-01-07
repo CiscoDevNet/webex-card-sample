@@ -44,13 +44,19 @@ Note, this project uses the Webex Teams [node.js SDK](https://developer.webex.co
 
 - In VS Code:
 
-    1. Edit the `.env` file and paste in your bot access token (be sure to save)
+    1. Edit the `.env` file:
+
+        - Paste in your bot access token
+
+        - (Optional) Paste in your app's publically reachable URL.  If not specified, the app will use Ngrok to dynamically create a reverse tunnel instead (see caveats in [Hints](#hints) below)
+
+        - Be sure to save the file
 
     2. Run the sample by pressing **F5**, or by opening the Debugging panel and clicking the green 'Launch' arrow
 
-- In your favorite Webex Teams client, add the new bot to a test space/room.  Remember to @mention the bot if in a group space.  Sending any message to the bot (1:1 or @mention) will trigger it to send a new strategy
+- In your favorite Webex Teams client, add the new bot to a test space/room - it should automatically post a strategy when added.  Sending any message to the bot (remember to @mention the bot if in a group space) will trigger it to send a new strategy
 
-- After a strategy is posted, you can click on the 'refresh' icon to request another card/strategy.  You can click on 'settings', play with the options and click the 'save' button, however the sample app does not implement actually saving/scheduling posts automatically
+- After a strategy is posted, you can click on the 'refresh' icon to request another strategy.  You can click on 'settings', play with the options and click the 'save' button, however the sample app does not implement actually saving/scheduling posts automatically (it just prints the data to the console)
 
 ## Hints
 
