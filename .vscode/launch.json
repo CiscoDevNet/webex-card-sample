@@ -8,11 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/index.js",
-            "env": {
-                "WEBEX_ACCESS_TOKEN": "CHANGEME",
-                "WEBEX_LOG_LEVEL": "error" //   error, warn, info, debug, trace
-            }
+            "program": "${workspaceFolder}/index.js"
         }
     ]
 }
