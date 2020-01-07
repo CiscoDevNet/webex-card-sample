@@ -3,7 +3,7 @@
 ## Overview
 
 Implements a Webex Teams messaging bot, that can post an [adaptive card](https://adaptivecards.io/)
-containing an 'oblique strategy' scraped from [http://stoney.sb.org/eno/oblique.html](http://stoney.sb.org/eno/oblique.html)].
+containing an 'oblique strategy' scraped from [http://stoney.sb.org/eno/oblique.html](http://stoney.sb.org/eno/oblique.html).
 
 ![screenshot](screenshot.png)
 
@@ -56,8 +56,8 @@ Note, this project uses the Webex Teams [node.js SDK](https://developer.webex.co
 
 - As the application creates cards featuring some images (for background and button icons) which must be served by a publically reachable web server, this sample uses the [Ngrok for node](https://www.npmjs.com/package/ngrok) package to create a reverse proxy tunnel on startup - this may have implications for your firewall/security policy.
 
-    A production application would typically host an application like this on a cloud platform or have an IT-vetted reverse proxy configured, etc.
+    A production application would typically host an application like this on a cloud platform or have an IT-vetted reverse proxy configured, etc
 
-- As a result of the above, any assets used in posted cards which are statically served by this app (i.e. title, background and icon images) will only appear in the Webex Teams client when the app is running.  Further, as the public URL provided by Ngrok is different on each run, the asset URLs present in previously posted cards will no longer work when the app is restarted later
+- As a result of the above, any card assets which are statically served by this app (i.e. title, background and icon images) will only appear in the Webex Teams client when the app is running.  Further, as the public URL provided by Ngrok is different on each run, the asset URLs present in previously posted cards will no longer work when the app is restarted later
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/webex-card-sample)
