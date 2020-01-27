@@ -44,7 +44,7 @@ Note, this project uses the Webex Teams [node.js SDK](https://developer.webex.co
 
 - In VS Code:
 
-    1. Edit the `.env` file:
+    1. Rename the `.env.example` file as `.env`, and open it for editing:
 
         - Paste in your bot access token
 
@@ -52,7 +52,7 @@ Note, this project uses the Webex Teams [node.js SDK](https://developer.webex.co
 
         - Be sure to save the file
 
-    2. Run the sample by pressing **F5**, or by opening the Debugging panel and clicking the green 'Launch' arrow
+    2. Run the sample by pressing **F5**, or by opening the Debug panel and clicking the green 'Launch' arrow
 
 - In your favorite Webex Teams client, add the new bot to a test space/room - it should automatically post a strategy when added.  Sending any message to the bot (remember to @mention the bot if in a group space) will trigger it to send a new strategy
 
